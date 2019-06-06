@@ -77,7 +77,7 @@ server <- function(input, output) {
         parameterset<-data.frame(new_Year=input$new_Year, Level=input$Level, final_Duration=input$final_Duration,
         Score=input$Score, log_Votes=input$log_Votes, Animation=input$Animation,
         Comedy=input$Comedy, Drama=input$Drama, Sport=input$Sport )
-        result<-10^(predict(mfinal2, parameterset))
+        result<-exp(predict(mfinal2, parameterset))
         result
     })
 }

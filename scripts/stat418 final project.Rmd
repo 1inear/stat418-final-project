@@ -258,7 +258,7 @@ summary(mfinal2)
 
 ```{r}
 parameterset<-data.frame(new_Year="second_ten", Level="R", final_Duration="Long", Score=7.5, log_Votes=12.25, Animation=1, Comedy=0, Drama=1, Sport=0 )
-result<-10^(predict(mfinal2, parameterset))
+result<-exp(predict(mfinal2, parameterset))
 result
 
 
