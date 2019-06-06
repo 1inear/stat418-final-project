@@ -13,7 +13,7 @@ library(rsconnect)
 rsconnect::deployApp(appDir = 'docker/app/',appName="movie_gross")
 
 #this is now running at
-#https://linear0323.shinyapps.io/movie_gross_prediction/
+#https://linear0323.shinyapps.io/movie/
 
 
 
